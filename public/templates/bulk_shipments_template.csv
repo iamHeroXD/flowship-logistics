@@ -1,0 +1,5 @@
+recipient_name,recipient_phone,pickup_address,pickup_city,delivery_address,delivery_city,weight_kg,category,delivery_tier,declared_value,description
+Acme Industrial Tech,+1 (555) 123-4567,450 Lexington Ave,New York,120 Industry City Way,Brooklyn,14.5,ELECTRONICS,EXPRESS,2400,Server Blades Batch A
+Summit Logistics LLC,+1 (555) 987-6543,725 Gateway Blvd,Jersey City,350 5th Ave,New York,5.0,DOCUMENTS,SAME_DAY,500,Urgent Legal Filings
+BioCare Laboratories,+1 (555) 333-8899,100 Terminal Island,Brooklyn,600 Atlantic Ave,Brooklyn,8.2,PERISHABLE,STANDARD,1200,Thermal Cartridges
+Titan Aerospace Corp,+1 (555) 444-2211,2200 Rail Freight Way,Chicago,1400 Harbor Blvd,Long Beach,45.0,GENERAL,SCHEDULED,5800,Aerospace Hardware Couplings

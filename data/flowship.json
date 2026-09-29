@@ -1,0 +1,898 @@
+{
+  "users": [
+    {
+      "id": "usr_cust_1",
+      "name": "Elena Rostova",
+      "email": "customer@flowship.com",
+      "phone": "+1 (555) 234-8901",
+      "role": "CUSTOMER",
+      "passwordHash": "$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGPEWi9GQORt3U0m.",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150",
+      "organizationId": "biz_01",
+      "createdAt": "2026-01-15T08:00:00Z",
+      "updatedAt": "2026-03-20T10:00:00Z",
+      "isVerified": true,
+      "addresses": [
+        {
+          "id": "addr_1",
+          "label": "Manhattan Distribution Office",
+          "street": "450 Lexington Avenue",
+          "city": "New York",
+          "state": "NY",
+          "postalCode": "10017",
+          "country": "United States",
+          "coordinates": {
+            "lat": 40.7527,
+            "lng": -73.9772
+          }
+        },
+        {
+          "id": "addr_2",
+          "label": "Brooklyn Fulfillment Annex",
+          "street": "120 Industry City Way",
+          "city": "Brooklyn",
+          "state": "NY",
+          "postalCode": "11232",
+          "country": "United States",
+          "coordinates": {
+            "lat": 40.6558,
+            "lng": -74.0089
+          }
+        }
+      ]
+    },
+    {
+      "id": "usr_disp_1",
+      "name": "Marcus Vance",
+      "email": "dispatcher@flowship.com",
+      "phone": "+1 (555) 345-6789",
+      "role": "DISPATCHER",
+      "passwordHash": "$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGPEWi9GQORt3U0m.",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
+      "createdAt": "2026-01-10T09:00:00Z",
+      "updatedAt": "2026-03-25T14:30:00Z",
+      "isVerified": true
+    },
+    {
+      "id": "usr_drv_1",
+      "name": "Carlos Mendoza",
+      "email": "driver@flowship.com",
+      "phone": "+1 (555) 456-7890",
+      "role": "DRIVER",
+      "passwordHash": "$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGPEWi9GQORt3U0m.",
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "createdAt": "2026-01-20T11:00:00Z",
+      "updatedAt": "2026-03-28T09:00:00Z",
+      "isVerified": true
+    },
+    {
+      "id": "usr_adm_1",
+      "name": "Sarah Jenkins",
+      "email": "admin@flowship.com",
+      "phone": "+1 (555) 789-0123",
+      "role": "ADMIN",
+      "passwordHash": "$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGPEWi9GQORt3U0m.",
+      "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150",
+      "createdAt": "2025-11-01T08:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "isVerified": true
+    },
+    {
+      "id": "usr_sadm_1",
+      "name": "Alexander Wright",
+      "email": "superadmin@flowship.com",
+      "phone": "+1 (555) 901-2345",
+      "role": "SUPER_ADMIN",
+      "passwordHash": "$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGPEWi9GQORt3U0m.",
+      "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "createdAt": "2025-10-01T08:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "isVerified": true
+    }
+  ],
+  "drivers": [
+    {
+      "id": "drv_01",
+      "userId": "usr_drv_1",
+      "name": "Carlos Mendoza",
+      "email": "driver@flowship.com",
+      "phone": "+1 (555) 456-7890",
+      "licenseNumber": "CDL-NY-89104",
+      "rating": 4.95,
+      "totalDeliveries": 1248,
+      "status": "AVAILABLE",
+      "currentLocation": {
+        "lat": 40.7306,
+        "lng": -73.9352,
+        "lastUpdated": "2026-09-28T16:00:00Z"
+      },
+      "assignedVehicleId": "veh_01",
+      "activeShipmentIds": [
+        "shp_01"
+      ]
+    },
+    {
+      "id": "drv_02",
+      "userId": "usr_drv_2",
+      "name": "Darius Thorne",
+      "email": "darius.t@flowship.com",
+      "phone": "+1 (555) 678-1234",
+      "licenseNumber": "CDL-NJ-43892",
+      "rating": 4.88,
+      "totalDeliveries": 954,
+      "status": "AVAILABLE",
+      "currentLocation": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "lastUpdated": "2026-09-28T16:10:00Z"
+      },
+      "assignedVehicleId": "veh_02",
+      "activeShipmentIds": [
+        "shp_02"
+      ]
+    },
+    {
+      "id": "drv_03",
+      "userId": "usr_drv_3",
+      "name": "Aisha Al-Mansoor",
+      "email": "aisha.m@flowship.com",
+      "phone": "+1 (555) 890-5678",
+      "licenseNumber": "CDL-NY-99210",
+      "rating": 4.98,
+      "totalDeliveries": 1840,
+      "status": "BUSY",
+      "currentLocation": {
+        "lat": 40.7589,
+        "lng": -73.9851,
+        "lastUpdated": "2026-09-28T16:15:00Z"
+      },
+      "assignedVehicleId": "veh_03",
+      "activeShipmentIds": [
+        "shp_03"
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "veh_01",
+      "plateNumber": "FS-982-NY",
+      "model": "Ford E-Transit Electric Van 2025",
+      "type": "ELECTRIC_VAN",
+      "maxWeightCapacityKg": 1650,
+      "maxVolumeCapacityM3": 13.5,
+      "status": "ACTIVE",
+      "assignedDriverId": "drv_01",
+      "lastMaintenanceDate": "2026-02-15",
+      "nextMaintenanceDue": "2026-08-15",
+      "mileageKm": 28410
+    },
+    {
+      "id": "veh_02",
+      "plateNumber": "FS-441-NJ",
+      "model": "Mercedes-Benz Sprinter 3500 High-Roof",
+      "type": "CARGO_VAN",
+      "maxWeightCapacityKg": 2200,
+      "maxVolumeCapacityM3": 15,
+      "status": "ACTIVE",
+      "assignedDriverId": "drv_02",
+      "lastMaintenanceDate": "2026-01-20",
+      "nextMaintenanceDue": "2026-07-20",
+      "mileageKm": 42100
+    },
+    {
+      "id": "veh_03",
+      "plateNumber": "FS-119-NY",
+      "model": "Freightliner M2 106 26ft Box Truck",
+      "type": "BOX_TRUCK",
+      "maxWeightCapacityKg": 8500,
+      "maxVolumeCapacityM3": 48,
+      "status": "ACTIVE",
+      "assignedDriverId": "drv_03",
+      "lastMaintenanceDate": "2026-03-01",
+      "nextMaintenanceDue": "2026-09-01",
+      "mileageKm": 89300
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "wh_01",
+      "code": "WH-NYC-01",
+      "name": "New York Metro Logistics Terminal",
+      "city": "New York",
+      "country": "United States",
+      "address": "750 Logistics Blvd, Newark, NJ 07114",
+      "capacityTotalM3": 45000,
+      "capacityUsedM3": 31200,
+      "status": "OPERATIONAL",
+      "managerName": "Robert Vance"
+    },
+    {
+      "id": "wh_02",
+      "code": "WH-CHI-02",
+      "name": "Midwest Intermodal Cargo Center",
+      "city": "Chicago",
+      "country": "United States",
+      "address": "2200 Rail freight Way, Chicago, IL 60608",
+      "capacityTotalM3": 80000,
+      "capacityUsedM3": 54000,
+      "status": "OPERATIONAL",
+      "managerName": "Hannah Lee"
+    },
+    {
+      "id": "wh_03",
+      "code": "WH-LAX-03",
+      "name": "Pacific Gateway Distribution Hub",
+      "city": "Los Angeles",
+      "country": "United States",
+      "address": "1400 Harbor Blvd, Long Beach, CA 90802",
+      "capacityTotalM3": 95000,
+      "capacityUsedM3": 68500,
+      "status": "OPERATIONAL",
+      "managerName": "David Chen"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "inv_01",
+      "sku": "SKU-ELEC-401",
+      "name": "High-Density Lithium Server Modules",
+      "description": "48V 100Ah Rackmount Industrial Energy Units",
+      "warehouseId": "wh_01",
+      "warehouseCode": "WH-NYC-01",
+      "quantityOnHand": 420,
+      "quantityReserved": 60,
+      "quantityAvailable": 360,
+      "reorderLevel": 100,
+      "unitValue": 850,
+      "currency": "USD",
+      "updatedAt": "2026-09-28T12:00:00Z"
+    },
+    {
+      "id": "inv_02",
+      "sku": "SKU-MED-812",
+      "name": "Cold-Chain Diagnostic Cartridges",
+      "description": "Hermetically Sealed Thermal Diagnostic Trays",
+      "warehouseId": "wh_01",
+      "warehouseCode": "WH-NYC-01",
+      "quantityOnHand": 1500,
+      "quantityReserved": 300,
+      "quantityAvailable": 1200,
+      "reorderLevel": 400,
+      "unitValue": 125,
+      "currency": "USD",
+      "updatedAt": "2026-09-28T14:20:00Z"
+    },
+    {
+      "id": "inv_03",
+      "sku": "SKU-AERO-099",
+      "name": "Titanium Hydraulic Coupling Kits",
+      "description": "Aerospace Grade High-Pressure Assemblies",
+      "warehouseId": "wh_02",
+      "warehouseCode": "WH-CHI-02",
+      "quantityOnHand": 250,
+      "quantityReserved": 40,
+      "quantityAvailable": 210,
+      "reorderLevel": 50,
+      "unitValue": 420,
+      "currency": "USD",
+      "updatedAt": "2026-09-27T18:00:00Z"
+    }
+  ],
+  "businesses": [
+    {
+      "id": "biz_01",
+      "name": "Apex Robotics International",
+      "industry": "Advanced Automation & Hardware",
+      "contactEmail": "logistics@apexrobotics.io",
+      "billingEmail": "ap@apexrobotics.io",
+      "phone": "+1 (555) 998-1122",
+      "creditLimit": 150000,
+      "balance": 14250,
+      "currency": "USD",
+      "apiKey": "flw_live_9a8f27c81d3e4b77a0",
+      "plan": "ENTERPRISE_CUSTOM",
+      "membersCount": 14,
+      "createdAt": "2025-06-10T10:00:00Z"
+    },
+    {
+      "id": "biz_02",
+      "name": "Nordic Clean Technologies",
+      "industry": "Renewable Power Equipment",
+      "contactEmail": "freight@nordiccleantech.se",
+      "billingEmail": "finance@nordiccleantech.se",
+      "phone": "+1 (555) 774-8833",
+      "creditLimit": 80000,
+      "balance": 6400,
+      "currency": "USD",
+      "apiKey": "flw_live_44b2a891e0ccf382a9",
+      "plan": "GROWTH_TIER",
+      "membersCount": 6,
+      "createdAt": "2025-11-20T11:30:00Z"
+    }
+  ],
+  "shipments": [
+    {
+      "id": "shp_01",
+      "trackingNumber": "FLW-2026-89421",
+      "customerId": "usr_cust_1",
+      "customerName": "Elena Rostova",
+      "customerEmail": "customer@flowship.com",
+      "customerPhone": "+1 (555) 234-8901",
+      "organizationId": "biz_01",
+      "origin": {
+        "id": "addr_orig_1",
+        "label": "Apex Robotics Assembly Plant",
+        "street": "725 Gateway Blvd, Suite 400",
+        "city": "Jersey City",
+        "state": "NJ",
+        "postalCode": "07305",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.7178,
+          "lng": -74.0431
+        }
+      },
+      "destination": {
+        "id": "addr_dest_1",
+        "label": "Hudson Tech Research Campus",
+        "street": "180 Varick Street, 9th Floor",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10014",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.7275,
+          "lng": -74.0049
+        }
+      },
+      "package": {
+        "weightKg": 18.5,
+        "dimensions": {
+          "lengthCm": 45,
+          "widthCm": 35,
+          "heightCm": 30
+        },
+        "category": "ELECTRONICS",
+        "description": "Precision Gyroscopic Actuators - Fragile & Calibrated",
+        "declaredValue": 4800,
+        "currency": "USD"
+      },
+      "deliveryTier": "EXPRESS",
+      "status": "IN_TRANSIT",
+      "estimatedDeliveryTime": "2026-09-28T18:30:00Z",
+      "driverId": "drv_01",
+      "driverName": "Carlos Mendoza",
+      "driverPhone": "+1 (555) 456-7890",
+      "vehicleId": "veh_01",
+      "pricing": {
+        "basePrice": 45,
+        "distanceKm": 14.8,
+        "distanceFee": 29.6,
+        "weightFee": 18.5,
+        "tierMultiplier": 1.4,
+        "zoneSurcharge": 12,
+        "fuelSurcharge": 6.5,
+        "tax": 9.2,
+        "discount": 0,
+        "total": 120.8,
+        "currency": "USD"
+      },
+      "payment": {
+        "id": "pay_01",
+        "invoiceId": "inv_01",
+        "amount": 120.8,
+        "currency": "USD",
+        "method": "CARD",
+        "status": "SUCCEEDED",
+        "provider": "STRIPE",
+        "transactionReference": "ch_3N8j9e2eZvKYlo2C1g9uV21",
+        "createdAt": "2026-09-28T13:45:00Z"
+      },
+      "events": [
+        {
+          "id": "evt_01",
+          "timestamp": "2026-09-28T14:00:00Z",
+          "status": "PENDING",
+          "location": "Jersey City Operations Hub",
+          "coordinates": {
+            "lat": 40.7178,
+            "lng": -74.0431
+          },
+          "actorName": "Elena Rostova",
+          "actorRole": "CUSTOMER",
+          "notes": "Shipment created and electronic customs declaration registered."
+        },
+        {
+          "id": "evt_02",
+          "timestamp": "2026-09-28T14:30:00Z",
+          "status": "ASSIGNED",
+          "location": "Metro Automated Dispatch",
+          "coordinates": {
+            "lat": 40.7178,
+            "lng": -74.0431
+          },
+          "actorName": "Marcus Vance",
+          "actorRole": "DISPATCHER",
+          "notes": "Assigned to Carlos Mendoza (Ford E-Transit Electric FS-982-NY)."
+        },
+        {
+          "id": "evt_03",
+          "timestamp": "2026-09-28T15:15:00Z",
+          "status": "PICKED_UP",
+          "location": "Apex Robotics Assembly Plant, Jersey City",
+          "coordinates": {
+            "lat": 40.7178,
+            "lng": -74.0431
+          },
+          "actorName": "Carlos Mendoza",
+          "actorRole": "DRIVER",
+          "notes": "Cargo inspected, barcoded, and loaded into climate-controlled bay."
+        },
+        {
+          "id": "evt_04",
+          "timestamp": "2026-09-28T16:00:00Z",
+          "status": "IN_TRANSIT",
+          "location": "Holland Tunnel Corridor, Approaching Manhattan",
+          "coordinates": {
+            "lat": 40.7258,
+            "lng": -74.015
+          },
+          "actorName": "Carlos Mendoza",
+          "actorRole": "DRIVER",
+          "notes": "Vehicle en route to destination. Telemetry normal."
+        }
+      ],
+      "createdAt": "2026-09-28T14:00:00Z",
+      "updatedAt": "2026-09-28T16:00:00Z"
+    },
+    {
+      "id": "shp_02",
+      "trackingNumber": "FLW-2026-10293",
+      "customerId": "usr_cust_1",
+      "customerName": "Elena Rostova",
+      "customerEmail": "customer@flowship.com",
+      "customerPhone": "+1 (555) 234-8901",
+      "origin": {
+        "id": "addr_orig_2",
+        "label": "Flowship Newark Terminal",
+        "street": "750 Logistics Blvd",
+        "city": "Newark",
+        "state": "NJ",
+        "postalCode": "07114",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.6975,
+          "lng": -74.1745
+        }
+      },
+      "destination": {
+        "id": "addr_dest_2",
+        "label": "Empire State Building Suite 540",
+        "street": "350 5th Avenue",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10118",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.7484,
+          "lng": -73.9857
+        }
+      },
+      "package": {
+        "weightKg": 5.2,
+        "dimensions": {
+          "lengthCm": 30,
+          "widthCm": 25,
+          "heightCm": 15
+        },
+        "category": "DOCUMENTS",
+        "description": "Certified International Legal Briefs & Notarized Deeds",
+        "declaredValue": 1200,
+        "currency": "USD"
+      },
+      "deliveryTier": "SAME_DAY",
+      "status": "OUT_FOR_DELIVERY",
+      "estimatedDeliveryTime": "2026-09-28T17:15:00Z",
+      "driverId": "drv_02",
+      "driverName": "Darius Thorne",
+      "driverPhone": "+1 (555) 678-1234",
+      "vehicleId": "veh_02",
+      "pricing": {
+        "basePrice": 55,
+        "distanceKm": 21.4,
+        "distanceFee": 42.8,
+        "weightFee": 7.8,
+        "tierMultiplier": 1.9,
+        "zoneSurcharge": 15,
+        "fuelSurcharge": 8,
+        "tax": 11.5,
+        "discount": 0,
+        "total": 140.1,
+        "currency": "USD"
+      },
+      "payment": {
+        "id": "pay_02",
+        "invoiceId": "inv_02",
+        "amount": 140.1,
+        "currency": "USD",
+        "method": "WALLET",
+        "status": "SUCCEEDED",
+        "provider": "INTERNAL_WALLET",
+        "transactionReference": "wlt_tx_99410293",
+        "createdAt": "2026-09-28T11:00:00Z"
+      },
+      "events": [
+        {
+          "id": "evt_02_1",
+          "timestamp": "2026-09-28T11:00:00Z",
+          "status": "PENDING",
+          "location": "Newark Hub",
+          "actorName": "Elena Rostova",
+          "actorRole": "CUSTOMER"
+        },
+        {
+          "id": "evt_02_2",
+          "timestamp": "2026-09-28T11:45:00Z",
+          "status": "ASSIGNED",
+          "location": "Newark Hub",
+          "actorName": "Marcus Vance",
+          "actorRole": "DISPATCHER"
+        },
+        {
+          "id": "evt_02_3",
+          "timestamp": "2026-09-28T13:30:00Z",
+          "status": "PICKED_UP",
+          "location": "Newark Hub",
+          "actorName": "Darius Thorne",
+          "actorRole": "DRIVER"
+        },
+        {
+          "id": "evt_02_4",
+          "timestamp": "2026-09-28T15:45:00Z",
+          "status": "OUT_FOR_DELIVERY",
+          "location": "Midtown Manhattan, 5th Ave",
+          "coordinates": {
+            "lat": 40.7484,
+            "lng": -73.9857
+          },
+          "actorName": "Darius Thorne",
+          "actorRole": "DRIVER",
+          "notes": "Driver approaching delivery dock with security escort."
+        }
+      ],
+      "createdAt": "2026-09-28T11:00:00Z",
+      "updatedAt": "2026-09-28T15:45:00Z"
+    },
+    {
+      "id": "shp_03",
+      "trackingNumber": "FLW-2026-44019",
+      "customerId": "usr_cust_1",
+      "customerName": "Elena Rostova",
+      "customerEmail": "customer@flowship.com",
+      "customerPhone": "+1 (555) 234-8901",
+      "origin": {
+        "id": "addr_orig_3",
+        "street": "100 Terminal Island",
+        "city": "Brooklyn",
+        "state": "NY",
+        "postalCode": "11201",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.696,
+          "lng": -73.9845
+        }
+      },
+      "destination": {
+        "id": "addr_dest_3",
+        "street": "600 Atlantic Avenue",
+        "city": "Brooklyn",
+        "state": "NY",
+        "postalCode": "11217",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.6844,
+          "lng": -73.9774
+        }
+      },
+      "package": {
+        "weightKg": 85,
+        "dimensions": {
+          "lengthCm": 120,
+          "widthCm": 80,
+          "heightCm": 70
+        },
+        "category": "GENERAL",
+        "description": "Specialty Retail Fixtures & Displays",
+        "declaredValue": 3400,
+        "currency": "USD"
+      },
+      "deliveryTier": "STANDARD",
+      "status": "DELIVERED",
+      "estimatedDeliveryTime": "2026-09-27T16:00:00Z",
+      "actualDeliveryTime": "2026-09-27T15:42:10Z",
+      "driverId": "drv_03",
+      "driverName": "Aisha Al-Mansoor",
+      "driverPhone": "+1 (555) 890-5678",
+      "vehicleId": "veh_03",
+      "pricing": {
+        "basePrice": 35,
+        "distanceKm": 6.2,
+        "distanceFee": 12.4,
+        "weightFee": 42.5,
+        "tierMultiplier": 1,
+        "zoneSurcharge": 8,
+        "fuelSurcharge": 4.2,
+        "tax": 7.1,
+        "discount": 0,
+        "total": 109.2,
+        "currency": "USD"
+      },
+      "payment": {
+        "id": "pay_03",
+        "invoiceId": "inv_03",
+        "amount": 109.2,
+        "currency": "USD",
+        "method": "CARD",
+        "status": "SUCCEEDED",
+        "provider": "STRIPE",
+        "transactionReference": "ch_99Kz1pQwerty0911",
+        "createdAt": "2026-09-27T10:00:00Z"
+      },
+      "proofOfDelivery": {
+        "receiverName": "Julian Sterling (Dock Supervisor)",
+        "signatureDataUrl": "data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"100\"><path d=\"M 10 50 Q 80 10 150 50 T 290 50\" stroke=\"%231e3a47\" stroke-width=\"3\" fill=\"none\"/></svg>",
+        "signedAt": "2026-09-27T15:42:10Z",
+        "coordinates": {
+          "lat": 40.6844,
+          "lng": -73.9774
+        },
+        "notes": "Signed and accepted with zero transit damage. All pallet seals intact."
+      },
+      "events": [
+        {
+          "id": "evt_03_1",
+          "timestamp": "2026-09-27T10:00:00Z",
+          "status": "PENDING",
+          "location": "Brooklyn Marine Terminal",
+          "actorName": "Elena Rostova",
+          "actorRole": "CUSTOMER"
+        },
+        {
+          "id": "evt_03_2",
+          "timestamp": "2026-09-27T11:00:00Z",
+          "status": "ASSIGNED",
+          "location": "Brooklyn Operations",
+          "actorName": "Marcus Vance",
+          "actorRole": "DISPATCHER"
+        },
+        {
+          "id": "evt_03_3",
+          "timestamp": "2026-09-27T12:30:00Z",
+          "status": "PICKED_UP",
+          "location": "Brooklyn Marine Terminal",
+          "actorName": "Aisha Al-Mansoor",
+          "actorRole": "DRIVER"
+        },
+        {
+          "id": "evt_03_4",
+          "timestamp": "2026-09-27T14:15:00Z",
+          "status": "IN_TRANSIT",
+          "location": "Flatbush Avenue Line",
+          "actorName": "Aisha Al-Mansoor",
+          "actorRole": "DRIVER"
+        },
+        {
+          "id": "evt_03_5",
+          "timestamp": "2026-09-27T15:00:00Z",
+          "status": "OUT_FOR_DELIVERY",
+          "location": "Atlantic Ave Freight Bay",
+          "actorName": "Aisha Al-Mansoor",
+          "actorRole": "DRIVER"
+        },
+        {
+          "id": "evt_03_6",
+          "timestamp": "2026-09-27T15:42:10Z",
+          "status": "DELIVERED",
+          "location": "600 Atlantic Avenue, Brooklyn",
+          "coordinates": {
+            "lat": 40.6844,
+            "lng": -73.9774
+          },
+          "actorName": "Aisha Al-Mansoor",
+          "actorRole": "DRIVER",
+          "notes": "Received and counter-signed by Julian Sterling."
+        }
+      ],
+      "createdAt": "2026-09-27T10:00:00Z",
+      "updatedAt": "2026-09-27T15:42:10Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv_01",
+      "invoiceNumber": "INV-2026-0041",
+      "shipmentId": "shp_01",
+      "trackingNumber": "FLW-2026-89421",
+      "customerId": "usr_cust_1",
+      "customerName": "Elena Rostova",
+      "customerEmail": "customer@flowship.com",
+      "billingAddress": {
+        "id": "baddr_1",
+        "street": "450 Lexington Avenue",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10017",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.7527,
+          "lng": -73.9772
+        }
+      },
+      "lineItems": [
+        {
+          "description": "Express Delivery Base Service",
+          "quantity": 1,
+          "unitPrice": 45,
+          "amount": 45
+        },
+        {
+          "description": "Transit Distance Fee (14.8 km @ $2.00/km)",
+          "quantity": 1,
+          "unitPrice": 29.6,
+          "amount": 29.6
+        },
+        {
+          "description": "Package Weight Fee (18.5 kg @ $1.00/kg)",
+          "quantity": 1,
+          "unitPrice": 18.5,
+          "amount": 18.5
+        },
+        {
+          "description": "Metro Inter-State Zone Surcharge & Fuel",
+          "quantity": 1,
+          "unitPrice": 18.5,
+          "amount": 18.5
+        }
+      ],
+      "subtotal": 111.6,
+      "taxRate": 0.0825,
+      "taxAmount": 9.2,
+      "total": 120.8,
+      "currency": "USD",
+      "paymentStatus": "SUCCEEDED",
+      "issuedDate": "2026-09-28T14:00:00Z",
+      "dueDate": "2026-10-28T14:00:00Z"
+    },
+    {
+      "id": "inv_02",
+      "invoiceNumber": "INV-2026-0042",
+      "shipmentId": "shp_02",
+      "trackingNumber": "FLW-2026-10293",
+      "customerId": "usr_cust_1",
+      "customerName": "Elena Rostova",
+      "customerEmail": "customer@flowship.com",
+      "billingAddress": {
+        "id": "baddr_1",
+        "street": "450 Lexington Avenue",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10017",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.7527,
+          "lng": -73.9772
+        }
+      },
+      "lineItems": [
+        {
+          "description": "Same-Day Urgent Document Courier Base",
+          "quantity": 1,
+          "unitPrice": 55,
+          "amount": 55
+        },
+        {
+          "description": "Rush Transit Mileage & Tunnel Toll Surcharges",
+          "quantity": 1,
+          "unitPrice": 73.6,
+          "amount": 73.6
+        }
+      ],
+      "subtotal": 128.6,
+      "taxRate": 0.0825,
+      "taxAmount": 11.5,
+      "total": 140.1,
+      "currency": "USD",
+      "paymentStatus": "SUCCEEDED",
+      "issuedDate": "2026-09-28T11:00:00Z",
+      "dueDate": "2026-10-28T11:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_01",
+      "userId": "usr_cust_1",
+      "title": "Shipment En Route",
+      "message": "FLW-2026-89421 is now in transit with Carlos Mendoza.",
+      "type": "SHIPMENT",
+      "read": false,
+      "linkUrl": "/dashboard/shipments/shp_01",
+      "createdAt": "2026-09-28T16:00:00Z"
+    },
+    {
+      "id": "notif_02",
+      "userId": "usr_cust_1",
+      "title": "Delivery Confirmed",
+      "message": "FLW-2026-44019 has been delivered and signed by Julian Sterling.",
+      "type": "SHIPMENT",
+      "read": true,
+      "linkUrl": "/dashboard/shipments/shp_03",
+      "createdAt": "2026-09-27T15:45:00Z"
+    },
+    {
+      "id": "notif_03",
+      "userId": "usr_cust_1",
+      "title": "Invoice Issued",
+      "message": "Invoice INV-2026-0041 for $120.80 has been paid successfully.",
+      "type": "PAYMENT",
+      "read": true,
+      "linkUrl": "/dashboard/invoices",
+      "createdAt": "2026-09-28T14:05:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud_01",
+      "timestamp": "2026-09-28T14:30:00Z",
+      "actorId": "usr_disp_1",
+      "actorName": "Marcus Vance",
+      "actorRole": "DISPATCHER",
+      "action": "ASSIGN_DRIVER",
+      "targetType": "SHIPMENT",
+      "targetId": "shp_01",
+      "details": "Assigned shipment FLW-2026-89421 to driver Carlos Mendoza (veh_01).",
+      "ipAddress": "198.51.100.44"
+    },
+    {
+      "id": "aud_02",
+      "timestamp": "2026-09-28T14:00:00Z",
+      "actorId": "usr_cust_1",
+      "actorName": "Elena Rostova",
+      "actorRole": "CUSTOMER",
+      "action": "CREATE_SHIPMENT",
+      "targetType": "SHIPMENT",
+      "targetId": "shp_01",
+      "details": "Customer initiated express shipment from Jersey City to Manhattan.",
+      "ipAddress": "203.0.113.19"
+    },
+    {
+      "id": "aud_03",
+      "timestamp": "2026-09-27T15:42:10Z",
+      "actorId": "usr_drv_3",
+      "actorName": "Aisha Al-Mansoor",
+      "actorRole": "DRIVER",
+      "action": "COMPLETE_DELIVERY",
+      "targetType": "SHIPMENT",
+      "targetId": "shp_03",
+      "details": "Recorded POD signature from Julian Sterling and closed order FLW-2026-44019.",
+      "ipAddress": "172.56.21.8"
+    }
+  ],
+  "pricingRules": {
+    "baseRate": 25,
+    "perKmRate": 1.5,
+    "perKgRate": 0.8,
+    "tierMultipliers": {
+      "STANDARD": 1,
+      "SCHEDULED": 1.2,
+      "EXPRESS": 1.4,
+      "SAME_DAY": 1.9
+    },
+    "zoneSurcharges": {
+      "METRO": 5,
+      "REGIONAL": 12,
+      "CROSS_BORDER": 35
+    },
+    "fuelSurchargePercent": 0.05,
+    "taxPercent": 0.0825
+  }
+}
