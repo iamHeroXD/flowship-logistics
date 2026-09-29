@@ -1,5 +1,13 @@
 # Flowship Logistics — Enterprise Supply Chain Intelligence Platform
 
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Production-2ea88b?style=for-the-badge&logo=vercel)](https://flowship-logistics.vercel.app)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-132238?style=for-the-badge&logo=github)](https://github.com/iamHeroXD/flowship-logistics)
+[![Next.js 14](https://img.shields.io/badge/Next.js-14%20App%20Router-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+
+**Live Production URL**: [https://flowship-logistics.vercel.app](https://flowship-logistics.vercel.app)  
+**GitHub Repository**: [https://github.com/iamHeroXD/flowship-logistics](https://github.com/iamHeroXD/flowship-logistics)
+
 An enterprise-grade, full-stack logistics and supply chain management platform built with **Next.js 14+ (App Router)**, **TypeScript**, **Tailwind CSS**, and modern telematics architecture. 
 
 Flowship Logistics matches refined operational aesthetics with a unified multi-modal freight backend supporting 5 distinct user roles: **Customer**, **Dispatcher**, **Driver**, **Admin**, and **Super Admin**.
